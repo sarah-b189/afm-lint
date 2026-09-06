@@ -1,0 +1,7 @@
+tests/fixtures/broken.afm:3: error: FontBBox has zero or negative area
+tests/fixtures/broken.afm:7: error: missing recommended entry Version
+tests/fixtures/broken.afm:7: error: missing recommended entry Ascender
+tests/fixtures/broken.afm:7: error: StartCharMetrics declares 3 glyphs but 4 were found
+tests/fixtures/broken.afm:10: error: glyph 'A' is already defined at line 9
+tests/fixtures/broken.afm:10: error: glyph 'A' has a negative advance width (-10)
+tests/fixtures/broken.afm:11: error: glyph 'B' is missing a WX (width) field

@@ -1,0 +1,11 @@
+StartFontMetrics 4.1
+FontName SoftFont
+FontBBox 100 0 50 100
+UnderlinePosition -100
+UnderlineThickness 50
+Descender -250
+StartCharMetrics 2
+C 32 ; WX 0 ; N space ;
+C 65 ; WX -5 ; N A ;
+EndCharMetrics
+EndFontMetrics

@@ -1,0 +1,4 @@
+tests/fixtures/soft-issues.afm:3: warning: FontBBox has zero or negative area
+tests/fixtures/soft-issues.afm:7: warning: missing recommended entry Version
+tests/fixtures/soft-issues.afm:7: warning: missing recommended entry Ascender
+tests/fixtures/soft-issues.afm:9: warning: glyph 'A' has a negative advance width (-5)

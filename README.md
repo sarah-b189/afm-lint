@@ -74,6 +74,19 @@ Standard library only, no external crates:
 cargo build --release
 ```
 
+## Testing
+
+`tests/golden.rs` runs the built binary against fixture `.afm` files under
+`tests/fixtures/` and checks stdout against a checked-in expected output,
+covering both strict and `--lenient` runs:
+
+```
+cargo test
+```
+
+When a rule's message text changes, update the matching `.stdout` file
+alongside it.
+
 ## License
 
 MIT, see `LICENSE`.

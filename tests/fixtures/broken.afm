@@ -1,0 +1,13 @@
+StartFontMetrics 4.1
+FontName BrokenFont
+FontBBox 100 100 50 50
+UnderlinePosition -100
+UnderlineThickness 50
+Descender -250
+StartCharMetrics 3
+C 32 ; WX 278 ; N space ;
+C 65 ; WX 667 ; N A ;
+C 65 ; WX -10 ; N A ;
+C 66 ; N B ;
+EndCharMetrics
+EndFontMetrics
