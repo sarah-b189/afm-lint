@@ -56,3 +56,18 @@ fn soft_issues_lenient_downgrades_to_warnings_and_passes() {
     assert_eq!(stdout, golden("soft-issues.lenient.stdout"));
     assert_eq!(code, 0);
 }
+
+#[test]
+fn multiple_file_arguments_are_all_linted_in_order() {
+    let (stdout, code) = run(&["tests/fixtures/clean.afm", "tests/fixtures/broken.afm"]);
+    let expected = format!("{}{}", golden("clean.strict.stdout"), golden("broken.strict.stdout"));
+    assert_eq!(stdout, expected);
+    assert_eq!(code, 1);
+}
+
+#[test]
+fn directory_argument_lints_every_afm_file_inside_it() {
+    let (stdout, code) = run(&["tests/fixtures/multi"]);
+    assert_eq!(stdout, golden("multi.strict.stdout"));
+    assert_eq!(code, 1);
+}

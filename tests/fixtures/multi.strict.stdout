@@ -1,0 +1,2 @@
+tests/fixtures/multi/a.afm: no issues found
+tests/fixtures/multi/b.afm:1: error: missing required FontName entry

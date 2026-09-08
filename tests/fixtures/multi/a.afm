@@ -1,0 +1,23 @@
+StartFontMetrics 4.1
+FontName TestFont
+FullName Test Font
+FamilyName Test
+Weight Medium
+ItalicAngle 0
+IsFixedPitch false
+FontBBox 0 -200 1000 800
+UnderlinePosition -100
+UnderlineThickness 50
+Version 001.000
+Notice Test notice
+EncodingScheme AdobeStandardEncoding
+CapHeight 700
+XHeight 500
+Ascender 750
+Descender -250
+StartCharMetrics 3
+C 32 ; WX 278 ; N space ;
+C 65 ; WX 667 ; N A ;
+C 66 ; WX 667 ; N B ;
+EndCharMetrics
+EndFontMetrics

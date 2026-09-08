@@ -20,6 +20,15 @@ same way a compiler warning would.
 afm-lint path/to/font.afm
 ```
 
+Pass several files, a directory, or a mix of both. Directories are walked
+recursively and every `.afm` file found is linted; each file's findings are
+reported the same way as a single-file run, one file after another:
+
+```
+afm-lint fonts/regular.afm fonts/bold.afm
+afm-lint fonts/
+```
+
 Given a file where the character count in `StartCharMetrics` doesn't
 match the glyphs actually listed, and a duplicate glyph name:
 
@@ -29,8 +38,9 @@ broken.afm:9: error: StartCharMetrics declares 3 glyphs but 2 were found
 broken.afm:12: error: glyph 'A' is already defined at line 11
 ```
 
-The process exits with status 1 if any error-level finding was
-reported, 0 otherwise (0 also covers "no issues found").
+The process exits 1 if any file produced an error-level finding, 0
+otherwise (0 also covers "no issues found"). It exits 2 if a given path
+couldn't be read or no `.afm` files were found at all.
 
 ### Strict by default, `--lenient` to relax it
 
